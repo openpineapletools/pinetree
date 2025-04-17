@@ -1,0 +1,8 @@
+tools/
+deploy/
+action-runner/
+API/
+test/
+sync/
+home/
+logs/

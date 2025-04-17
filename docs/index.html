@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>📌 Pine Tree | Simple Link Tree</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/98.css@0.1.17/98.css" />
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/lib/themes/vue.css" />
+  <link rel="stylesheet" href="assets/css/custom.css" />
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/prismjs/themes/prism-tomorrow.css">
+</head>
+<body>
+  <div class="window" style="margin: 2rem; width: 90%;">
+    <div class="title-bar">
+      <div class="title-bar-text">🔗 Pine Tree</div>
+      <div class="title-bar-controls">
+        <button aria-label="Minimize"></button>
+        <button aria-label="Maximize"></button>
+        <button aria-label="Close"></button>
+      </div>
+    </div>
+    <div class="window-body">
+      <div id="app">Loading documentation... 🕹️</div>
+    </div>
+  </div>
+  <script>
+    window.$docsify = {
+      name: '📬 Pine Tree',
+      repo: 'https://github.com/openpineapletools/pinetree',
+      loadSidebar: true,
+      loadNavbar: true,
+      subMaxLevel: 2,
+      themeColor: '#008080',
+      auto2top: true,
+      coverpage: false,
+      notFoundPage: true,
+      maxLevel: 6,
+      executeScript: true,
+      auto2top: true,
+      formatUpdated: '{DD}/{MM}/{YYYY}',
+      autoHeaders: {
+        separator: '.',    
+        sidebar: true,    
+        levels: 6,         
+        debug: true,      
+      },   
+      search: {
+        paths: 'auto',
+        placeholder: '🔍 Search docs...',
+        noData: 'No results!',
+        depth: 3,
+      },
+      pagination: {
+        previousText: '⬅️ To Previous Page',
+        nextText: '➡️ To Next Page',
+        crossChapter: true,
+        crossChapterText: true,
+      },
+      plugins: [
+        function(hook) {
+          hook.doneEach(function() {
+            console.log('📦 Docs loaded!');
+          });
+        }
+      ]
+    };
+  </script>
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@markbattistella/docsify-autoheaders@latest"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify-copy-code"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify-pagination/dist/docsify-pagination.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify-tabs@1"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/emoji.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify-mermaid@1.0.0/dist/docsify-mermaid.min.js"></script>
+  <script src="https://unpkg.com/@markbattistella/docsify-autoheaders@latest"></script>
+  <script src="assets/js/custom.js"></script>
+</body>
+</html>
